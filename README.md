@@ -19,5 +19,8 @@ AngularJS 1.4, ES6, Material Design, and Webpack.
 
 ```npm run-script devserver```
 
+Default localhost is 9100
+
+
 ### Build
 ```npm run-script build```
