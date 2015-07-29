@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf www/* && webpack -p",
+    "build": "rm -rf build/* && webpack -d",
     "devserver": "webpack-dev-server --port 9100 --progress --colors"
   },
   "repository": {
