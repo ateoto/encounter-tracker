@@ -1,4 +1,4 @@
-let homeModule = angular.module('demo.home', []);
+let homeModule = angular.module('app.home', []);
 
 import HomeConfig from './home.config';
 import HomeController from './home.controller';

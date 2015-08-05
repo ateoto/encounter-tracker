@@ -2,10 +2,11 @@
   "name": "5e_Encounter_Tracker",
   "version": "1.0.0",
   "description": "A tool for DM's to track D&D 5e encounters.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf build/* && webpack -d",
+    "prod": "rm -rf build/* && webpack -p",
     "devserver": "webpack-dev-server --port 9100 --progress --colors"
   },
   "repository": {

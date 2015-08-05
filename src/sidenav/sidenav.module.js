@@ -1,4 +1,4 @@
-let sidenavModule = angular.module('demo.sidenav', []);
+let sidenavModule = angular.module('app.sidenav', []);
 
 import SidenavController from './sidenav.controller';
 

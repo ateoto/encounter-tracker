@@ -1,13 +1,13 @@
 var path = require('path'),
     webpack = require("webpack"),
-    libPath = path.join(__dirname, 'lib'),
+    srcPath = path.join(__dirname, 'src'),
     buildPath = path.join(__dirname, 'build'),
     pkg = require('./package.json'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 module.exports = {
-    entry: path.join(libPath, 'index.js'),
+    entry: path.join(srcPath, 'app.js'),
     output: {
         path: path.join(buildPath),
         filename: 'bundle-[hash:6].js'
@@ -37,7 +37,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             pkg: pkg,
-            template: path.join(libPath, 'index.html')
+            template: path.join(srcPath, 'index.html')
         }),
         new ngAnnotatePlugin({
             add: true

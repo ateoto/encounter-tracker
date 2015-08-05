@@ -17,8 +17,8 @@ import sidenav from './sidenav/sidenav.module.js';
 // Project specific style
 import './scss/bootstrap.scss'
 
-// Create our demo module
-let demoModule = angular.module('demo', [
+// Create our app module
+let appModule = angular.module('app', [
     angularMaterial,
     angularAnimate,
     angularUIRouter,
@@ -26,11 +26,22 @@ let demoModule = angular.module('demo', [
     sidenav
 ])
 
-// demoModule.run(($log) => {
-//     $log.info('demo running');
+// appModule.run(($log) => {
+//     $log.info('app running');
 // })
 
-demoModule.config(($stateProvider) => {
+appModule.config(($mdThemingProvider, $stateProvider) => {
+
+    // configure our Material theme
+    $mdThemingProvider
+        .theme('default')
+        .primaryPalette('green', {
+            'default': '500'
+        })
+        .accentPalette('brown', {
+            'default': '900'
+        });
+
     $stateProvider.state('public', {
         url: "/public",
         abstract: true,
@@ -43,7 +54,7 @@ demoModule.config(($stateProvider) => {
     });
 });
 
-demoModule.controller('MainController', function($mdSidenav) {
+appModule.controller('MainController', function($mdSidenav) {
     let vm = this;
     vm.toggleSidenav = () => {
         $mdSidenav('left').toggle();
@@ -53,4 +64,4 @@ demoModule.controller('MainController', function($mdSidenav) {
     };
 });
 
-export default demoModule;
+export default appModule;
