@@ -1,5 +1,5 @@
-
-export default /* @ngInject */ function($stateProvider, $urlRouterProvider) {
+/* @ngInject */ 
+export default function($stateProvider, $urlRouterProvider) {
     $stateProvider.state('public.home', {
         url: "/home",
         views: {

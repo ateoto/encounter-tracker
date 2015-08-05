@@ -4,7 +4,9 @@ import HomeConfig from './home.config';
 import HomeController from './home.controller';
 require('./home.scss');
 
-homeModule.config( /* @ngInject */ HomeConfig);
-homeModule.controller('HomeController', /* @ngInject */ HomeController);
+/* @ngInject */ 
+homeModule.config(HomeConfig);
+/* @ngInject */ 
+homeModule.controller('HomeController', HomeController);
 
 export default homeModule = homeModule.name

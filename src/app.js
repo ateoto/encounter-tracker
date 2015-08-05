@@ -12,6 +12,7 @@ import angularMaterial from 'angular-material';
 import angularUIRouter from 'angular-ui-router';
 // Our modules
 import home from './home/home.module.js';
+import campaign from './home/campaign/campaign.module.js';
 import sidenav from './sidenav/sidenav.module.js';
 
 // Project specific style
@@ -23,6 +24,7 @@ let appModule = angular.module('app', [
     angularAnimate,
     angularUIRouter,
     home,
+    campaign,
     sidenav
 ])
 
@@ -36,10 +38,10 @@ appModule.config(($mdThemingProvider, $stateProvider) => {
     $mdThemingProvider
         .theme('default')
         .primaryPalette('green', {
-            'default': '500'
+            'default': '600'
         })
         .accentPalette('brown', {
-            'default': '900'
+            'default': '600'
         });
 
     $stateProvider.state('public', {

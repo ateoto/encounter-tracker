@@ -1,3 +1,4 @@
-export default /* @ngInject */ function($scope) {
+/* @ngInject */ 
+export default function($scope) {
     var vm = this;
 }
