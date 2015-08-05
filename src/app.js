@@ -56,13 +56,28 @@ appModule.config(($mdThemingProvider, $stateProvider) => {
     });
 });
 
+appModule.run(function($q, $rootScope, $window, $mdSidenav) {
+
+
+    $rootScope.$on('$stateChangeSuccess',
+        function(event, toState, toParams, fromState, fromParams) {
+            $rootScope.isLoading = false;
+        })
+
+    $rootScope.$on('$stateChangeStart',
+        function(event, toState, toParams, fromState, fromParams) {
+            $mdSidenav('leftNav').close();
+            $rootScope.isLoading = true;
+        })
+});
+
 appModule.controller('MainController', function($mdSidenav) {
     let vm = this;
     vm.toggleSidenav = () => {
-        $mdSidenav('left').toggle();
+        $mdSidenav('leftNav').toggle();
     };
     vm.closeSidenav = () => {
-        $mdSidenav('left').close();
+        $mdSidenav('leftNav').close();
     };
 });
 
