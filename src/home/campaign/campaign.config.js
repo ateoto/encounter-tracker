@@ -1,5 +1,4 @@
-/* @ngInject */ 
-export default function CampaignConfig($stateProvider, $urlRouterProvider) {
+ export default /* @ngInject */ function CampaignConfig($stateProvider, $urlRouterProvider) {
     $stateProvider.state('public.home.campaign', {
         url: "/home/campaign",
         views: {

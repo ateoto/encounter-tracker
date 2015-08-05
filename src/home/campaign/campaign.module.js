@@ -4,9 +4,8 @@ import CampaignConfig from './campaign.config';
 import CampaignController from './campaign.controller';
 require('./campaign.scss');
 
-/* @ngInject */
-campaignModule.config(CampaignConfig);
-/* @ngInject */
-campaignModule.controller('CampaignController', CampaignController);
+
+campaignModule.config(/* @ngInject */ CampaignConfig);
+campaignModule.controller('CampaignController', /* @ngInject */ CampaignController);
 
 export default campaignModule = campaignModule.name

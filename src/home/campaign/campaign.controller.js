@@ -1,4 +1,3 @@
-/* @ngInject */ 
-export default function CampaignController($scope) {
+export default /* @ngInject */ function CampaignController($scope) {
     var vm = this;
 }
