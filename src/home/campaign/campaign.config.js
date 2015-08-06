@@ -8,5 +8,4 @@
             }
         }
     });
-    $urlRouterProvider.otherwise("/public/home/campaign");
 }
