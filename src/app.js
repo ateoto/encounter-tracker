@@ -12,7 +12,7 @@ import angularMaterial from 'angular-material';
 import angularUIRouter from 'angular-ui-router';
 // Our modules
 import home from './home/home.module.js';
-import campaign from './home/campaign/campaign.module.js';
+import campaigns from './home/campaigns/campaigns.module.js';
 import sidenav from './sidenav/sidenav.module.js';
 
 // Project specific style
@@ -24,7 +24,7 @@ let appModule = angular.module('app', [
     angularAnimate,
     angularUIRouter,
     home,
-    campaign,
+    campaigns,
     sidenav
 ])
 
@@ -49,7 +49,7 @@ appModule.config(($mdThemingProvider, $stateProvider) => {
         abstract: true,
         views: {
             'sidenav': {
-                templateUrl: require("./sidenav/sidenav.html"),
+                templateUrl: require("./sidenav/sidenav.tpl.html"),
                 controller: "SidenavController as sidenav"
             }
         }
