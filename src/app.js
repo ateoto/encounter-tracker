@@ -13,6 +13,7 @@ import angularUIRouter from 'angular-ui-router';
 // Our modules
 import home from './home/home.module.js';
 import campaigns from './home/campaigns/campaigns.module.js';
+import monsters from './home/monsters/monsters.module.js';
 import sidenav from './sidenav/sidenav.module.js';
 
 // Project specific style
@@ -25,6 +26,7 @@ let appModule = angular.module('app', [
     angularUIRouter,
     home,
     campaigns,
+    monsters,
     sidenav
 ])
 
