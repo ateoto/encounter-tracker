@@ -1,5 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,700);
+
 @import "./variables";
+@import "./button";
 @import "./icon";
+@import "./typography";
 
 
 /**
@@ -12,4 +17,10 @@ md-content {
 
 .et-main-content {
 	background-color: #F2EEE7;
+}
+
+/**
+ * index
+ */
+.et-logo {
 }

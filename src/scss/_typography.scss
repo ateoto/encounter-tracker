@@ -1,0 +1,10 @@
+$font-family: 'Lato', sans-serif;
+$font-header: 'Merriweather', serif;
+
+html, body {
+	font-family: $font-family;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $font-header;
+}

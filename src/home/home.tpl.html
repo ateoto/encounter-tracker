@@ -1,18 +1,29 @@
 <div layout="column" layout-fill>
     <md-content class="et-home">
-		<h2 style="padding: 0 16px;">Beware: Owlbear territory.</h2>
+		<h2 style="padding: 0 16px;">Dashboard</h2>
         <div flex layout="row" layout-wrap>
             <md-card flex="45">
                 <md-card-content>
-                    <h3 ui-sref="public.home.campaigns">My Campaigns</h3>
-                    <md-button class="md-primary md-raised">
-                        <i class=""></i> Create a Campaign
-                    </md-button>
+                    <div flex layout="row">
+                        <h3 flex ui-sref="public.home.campaigns">
+                            My Campaigns
+                        </h3>
+                        <md-button flex class="md-primary md-raised">
+                            <i class=""></i> Create a Campaign
+                        </md-button>
+                    </div>
                 </md-card-content>
             </md-card>
-            <md-card flex="45" ui-sref="public.home.monsters">
+            <md-card flex="45">
                 <md-card-content>
-                    <h3>Monsters</h3>
+                    <div flex layout="row">
+                        <h3 flex ui-sref="public.home.monsters">
+                            Monsters
+                        </h3>
+                        <md-button flex class="md-primary md-raised">
+                            <i class=""></i> Add a Monster
+                        </md-button>
+                    </div>
                 </md-card-content>
             </md-card>
         </div>
