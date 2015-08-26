@@ -1,5 +1,5 @@
 {
-  "name": "5e_Encounter_Tracker",
+  "name": "5e_encounter_tracker",
   "version": "1.0.0",
   "description": "A tool for DM's to track D&D 5e encounters.",
   "main": "app.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shprink/angular1.4-ES6-material-webpack-boilerplate.git"
+    "url": "git+https://github.com/shprink/angular1.4-ES6-material-webpack-boilerplate.git"
   },
   "author": "ateoto and Kelbster",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "angular": "1.4.0",
     "angular-animate": "1.4.0",
     "angular-aria": "1.4.0",
-    "angular-material": "git://github.com/angular/bower-material#v0.10.0",
+    "angular-material": "git://github.com/angular/bower-material.git#v0.10.0",
     "angular-ui-router": "^0.2.14",
     "font-awesome": "^4.3.0"
   },
