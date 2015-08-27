@@ -12,14 +12,14 @@
             <div ui-view="sidenav"></div>
         </md-sidenav>
         <md-content class="et-main-content" flex layout-fill layout="column">
-            <md-toolbar class="et-main-toolbar">
+            <md-toolbar class="et-tbar et-tbar-dark">
                 <div class="md-toolbar-tools">
                     <md-button class="md-icon-button" aria-label="open menu" ng-click="main.toggleSidenav()">
                         <i class="fa fa-bars"></i>
                     </md-button>
-                    <h2 class="et-logo" flex>
+                    <h1 class="et-logo" flex ui-sref="public.home">
                         5e Encounter Tracker
-                    </h2>
+                    </h1>
                 </div>
             </md-toolbar>
             <div ui-view="content" flex layout-fill layout-padding></div>

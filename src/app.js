@@ -41,11 +41,12 @@ appModule.config(($mdThemingProvider, $stateProvider) => {
     // configure our Material theme
     $mdThemingProvider
         .theme('default')
-        .primaryPalette('green', {
-            'default': '600'
+        .dark()
+        .primaryPalette('lime', {
+            'default': 'A200'
         })
-        .accentPalette('brown', {
-            'default': '600'
+        .accentPalette('deep-orange', {
+            'default': 'A200'
         });
 
     $stateProvider.state('public', {

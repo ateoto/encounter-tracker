@@ -1,10 +1,9 @@
-$font-family: 'Lato', sans-serif;
-$font-header: 'Merriweather', serif;
-
 html, body {
-	font-family: $font-family;
+	//font-family: $font-family;
+	color: $et-font-color;
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: $font-header;
+	color: $et-font-color; 
+	//font-family: $font-header; 
 }

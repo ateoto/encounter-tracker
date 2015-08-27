@@ -1,24 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,700);
 
 @import "variables";
 @import "button";
+@import "card";
+@import "content";
+@import "header";
 @import "icon";
+@import "toolbar";
 @import "typography";
 
 /**
  * Global styles
  */
-md-content {
-	background: transparent;
+md-backdrop.md-opaque {
+  background-color: rgba(0,0,0,0.25);
 }
 
-.et-main-content {
-	background-color: #F2EEE7;
-}
-
-/**
- * index
- */
-.et-logo {
-}
